@@ -5,38 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Login</title>
 
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/28d6b952f3.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/main.css">
+
+    
 </head>
 <body>
     <div class="block">
 
         <div class="hero">
-            <div class="close">&#x2715;</div>
+            <a class="close" href="#"><i class="fas fa-times"></i></a>
             <img class="logo" src="./img/logo.png" alt="Logo">
-            <div class="hero-buttons">
-                <div class="left">＜</div>
-                <div class="right">﹥</div>
-            </div>
+            <a href="#" class="left"><i class="fas fa-chevron-left"></i></a>
+            <a href="#" class="right"><i class="fas fa-chevron-right"></i></a>
         </div>
 
         <main>
-            <div class="continue">
-                Continue buttons
-            </div>
-            <div class="line">
+                <button class="continue-with f"><i class="fab fa-facebook"></i>Continue with Facebook</button>
+                <button class="continue-with a"><i class="fab fa-apple"></i>Continue with Apple</button>
+                <button class="continue-with nr">Continue with Phone Number</button>
+            <div class="line-a">
                 <p>OR</p>
             </div>
-            <form action="">
-                Form section
-            </form>
-            <div class="line"></div>
-        </main>
 
-        <footer>
-            Footer Section
-        </footer>
+            <form>
+                <input type="text" placeholder="Email adress or username">
+                <input type="password" placeholder="Password">
+            </form>
+            <div class="submit">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span>Remember me</span>
+                </label>
+                <button class="login">Log in</button>
+            </div>
+            <a class="forgot" href="#">Forgot your password?</a>
+
+            <div class="line-b"></div>
+
+            <p class="footer-p">Don't have an account?</p>
+            <button class="continue-with nr">Sign up for spotify</button>
+
+        </main>
 
     </div>
 </body>
